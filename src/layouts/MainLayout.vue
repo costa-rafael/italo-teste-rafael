@@ -124,8 +124,8 @@ export default defineComponent({
 
     const handleLogout = async () => {
       $q.dialog({
-        title: 'Logout',
-        message: 'Do you really want to leave ?',
+        title: 'Sair',
+        message: 'Você realmente quer ir embora?',
         cancel: true,
         persistent: true
       }).onOk(async () => {
