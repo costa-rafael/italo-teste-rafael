@@ -1,18 +1,7 @@
 # Quasar com VUE e SupaBase
-## Criando telas de login para a italo
+### Criando telas de login para a italo
 
-## Init Config
 
-You are required to configure the ***quasar.conf.js*** file with your supabase credentials.
-
-```js
-build: {
-  env: {
-    SUPABASE_URL: 'XXXX',
-    SUPABASE_KEY: 'YYYY'
-  }
-}
-```
 
 ## Install the dependencies
 ```bash
@@ -28,6 +17,3 @@ quasar dev
 ```bash
 quasar build
 ```
-
-### Customize the configuration
-See [Configuring quasar.conf.js](https://quasar.dev/quasar-cli/quasar-conf-js).
