@@ -1,5 +1,5 @@
 # Quasar com VUE e SupaBase
-# Criando telas de login para a italo
+## Criando telas de login para a italo
 
 ## Init Config
 
