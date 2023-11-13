@@ -21,6 +21,20 @@
 * Supabase
 * VsCode
 
+## 💬A Construção
+
+- Com o supaBase fiz a ligação com o banco de dados, por ele ser muito proximo ao FIREBASE do Goole.
+- Gerei a chave + Url e colocou na rota do Quasar para poder iniciar assim que o usuario abrir o APP
+- Iniciei o Quasar com VUE, criando
+  * Páginas
+  * Rotas
+  * Configurações do tema
+  * Icones + Favicon
+  * Importação das Páginas
+ 
+- Todo o Layout foi pensando nas cores e tentando ser o mais próximo de um APP que é usado na Faculdade, Boas praticas de design + programação.
+- Foi desafiador em todas as telas e tive uma evolução muito boa para minhas novas Skills
+
 
 ## Instale as dependências
 ```bash
