@@ -1,4 +1,5 @@
-# Quasar Estoque Supabase (quasar-estoque-supabase)
+# Quasar com VUE e SupaBase
+# Criando telas de login para a italo
 
 ## Init Config
 
