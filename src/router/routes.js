@@ -30,8 +30,8 @@ const routes = [
     }
   },
 
-  // Always leave this as last one,
-  // but you can also remove it
+  // Sempre deixe isso como último,
+  // mas você também pode removê-lo
   {
     path: '/:catchAll(.*)*',
     component: () => import('pages/Error404.vue')

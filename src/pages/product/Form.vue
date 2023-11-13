@@ -3,7 +3,7 @@
     <div class="row justify-center">
       <div class="col-12 text-center">
         <p class="text-h6">
-          Form Product
+          Grupos
         </p>
       </div>
       <q-form class="col-md-7 col-xs-12 col-sm-12 q-gutter-y-md" @submit.prevent="handleSubmit">
@@ -17,7 +17,7 @@
         />
 
        <q-input
-          label="Name"
+          label="Nome"
           v-model="form.name"
           :rules="[val => (val && val.length > 0) || 'Name is required']"
         />
@@ -28,14 +28,14 @@
         />
 
         <q-input
-          label="Amount"
+          label="Curso"
           v-model="form.amount"
           :rules="[val => !!val || 'Amount is required']"
           type="number"
         />
 
         <q-input
-          label="Price"
+          label="Valor"
           v-model="form.price"
           :rules="[val => !!val || 'Price is required']"
           prefix="R$"
@@ -61,7 +61,7 @@
         />
 
         <q-btn
-          label="Cancel"
+          label="Cancelar"
           color="primary"
           class="full-width"
           rounded

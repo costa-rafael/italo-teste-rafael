@@ -10,7 +10,7 @@
         <q-input
           label="Name"
           v-model="form.name"
-          :rules="[val => (val && val.length > 0) || 'Name is required']"
+          :rules="[val => (val && val.length > 0) || 'O nome é obrigatório']"
         />
 
         <q-btn
@@ -22,7 +22,7 @@
         />
 
         <q-btn
-          label="Cancel"
+          label="Cancelar"
           color="primary"
           class="full-width"
           rounded

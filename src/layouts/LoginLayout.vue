@@ -2,8 +2,12 @@
   <q-layout view="lHh Lpr lFf">
     <q-header elevated>
       <q-toolbar>
-        <q-toolbar-title>
-          Quasar Estoque Supabase
+        <q-toolbar-title class="text-center" >
+          <img
+          alt="Italo Logo"
+          src="~assets/logo-italo.svg"
+          style="width: 300px; height: auto; padding: 5px;"
+          >
         </q-toolbar-title>
       </q-toolbar>
     </q-header>

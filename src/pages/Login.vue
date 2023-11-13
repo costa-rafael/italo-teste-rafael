@@ -1,26 +1,30 @@
 <template>
   <q-page padding>
     <q-form class="row justify-center" @submit.prevent="handleLogin">
-      <p class="col-12 text-h5 text-center"> Login </p>
+      <p class="col-12 text-h5 text-center"> Faça seu login </p>
       <div class="col-md-4 col-sm-6 col-xs-10 q-gutter-y-md">
         <q-input
           label="Email"
           v-model="form.email"
           lazy-rules
-          :rules="[val => (val && val.length > 0) || 'Email is required']"
+          outline
+          rounded
+          :rules="[val => (val && val.length > 0) || 'O e-mail é obrigatório']"
           type="email"
         />
 
         <q-input
-          label="Password"
+          label="Senha"
           v-model="form.password"
           lazy-rules
-          :rules="[val => (val && val.length > 0) || 'Password is required']"
+          outline
+          rounded
+          :rules="[val => (val && val.length > 0) || 'A senha é obrigatório']"
         />
 
         <div class="full-width q-pt-md">
           <q-btn
-            label="Login"
+            label="Entrar"
             color="primary"
             class="full-width"
             outline
@@ -30,7 +34,7 @@
         </div>
         <div class="full-width q-gutter-y-sm">
           <q-btn
-            label="Register"
+            label="Cadastre-se"
             color="primary"
             class="full-width"
             flat
@@ -38,7 +42,7 @@
             size="sm"
           />
           <q-btn
-            label="Forgot Password ?"
+            label="Esqueceu sua senha ?"
             color="primary"
             class="full-width"
             flat

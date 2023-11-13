@@ -1,7 +1,5 @@
 import { ref } from 'vue'
 import useSupabase from 'boot/supabase'
-// user is set outside of the useAuthUser function
-// so that it will act as global state and always refer to a single user
 
 // o usuário é definido fora da função useAuthUser para que atue como um estado global
 // e sempre se refira a um único usuário
@@ -10,7 +8,7 @@ const user = ref(null)
 export default function useAuthUser () {
   const { supabase } = useSupabase()
   /**
-   * Login with email and password
+   * Login com e-mail e senha
    */
   const login = async ({ email, password }) => {
     const { user, error } = await supabase.auth.signIn({ email, password })
@@ -19,7 +17,7 @@ export default function useAuthUser () {
   }
 
   /**
-   * Login with google, github, etc
+   * Faça login com google, github, etc.
    */
   const loginWithSocialProvider = async (provider) => {
     const { user, error } = await supabase.auth.signIn({ provider })
@@ -36,7 +34,7 @@ export default function useAuthUser () {
   }
 
   /**
-   * Check if the user is logged in or not
+   * Verifique se o usuário está logado ou não
    */
   const isLoggedIn = () => {
     return !!user.value
@@ -49,12 +47,12 @@ export default function useAuthUser () {
     const { user, error } = await supabase.auth.signUp(
       { email, password },
       {
-        // arbitrary meta data is passed as the second argument under a data key
-        // to the Supabase signUp method
+        // metadados arbitrários são passados como segundo argumento sob uma chave de dados
+        // para o método de inscrição Supabase
         data: meta,
-        // the to redirect to after the user confirms their email
-        // window.location wouldn't be available if we were rendering server side
-        // but since we're all on the client it will work fine
+        // o para redirecionar depois que o usuário confirmar seu e-mail
+        // window.location não estaria disponível se estivéssemos renderizando o lado do servidor
+        // mas como estamos todos no cliente, funcionará bem
         redirectTo: `${window.location.origin}/me?fromEmail=registrationConfirmation"`
       })
     if (error) throw error
@@ -62,7 +60,7 @@ export default function useAuthUser () {
   }
 
   /**
-   * Update user email, password, or meta data
+   * Atualizar e-mail, senha ou metadados do usuário
    */
   const update = async (data) => {
     const { user, error } = await supabase.auth.update(data)
@@ -71,8 +69,8 @@ export default function useAuthUser () {
   }
 
   /**
-   * Send user an email to reset their password
-   * (ie. support "Forgot Password?")
+   * Envie ao usuário um e-mail para redefinir sua senha
+   * (ou seja. suporte "Esqueceu a senha?")
    */
   const sendPasswordRestEmail = async (email) => {
     const { user, error } = await supabase.auth.api.resetPasswordForEmail(email)

@@ -10,12 +10,12 @@
       >
         <template v-slot:top>
           <span class="text-h6">
-            Category
+            Turmas
           </span>
           <q-space />
           <q-btn
             v-if="$q.platform.is.desktop"
-            label="Add New"
+            label="Adicionar Cursos"
             color="primary"
             icon="mdi-plus"
             dense
@@ -26,12 +26,12 @@
           <q-td :props="props" class="q-gutter-x-sm">
             <q-btn icon="mdi-pencil-outline" color="info" dense size="sm" @click="handleEdit(props.row)">
               <q-tooltip>
-                Edit
+                Editar
               </q-tooltip>
             </q-btn>
             <q-btn icon="mdi-delete-outline" color="negative" dense size="sm" @click="handleRemoveCategory(props.row)">
               <q-tooltip>
-                Delete
+                Remover
               </q-tooltip>
             </q-btn>
           </q-td>

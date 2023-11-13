@@ -2,8 +2,8 @@
   "name": "quasar-estoque-supabase",
   "version": "0.0.1",
   "description": "A Quasar Framework app",
-  "productName": "Quasar Estoque Supabase",
-  "author": "Patrick Monteiro <eng.patrickmonteiro@gmail.com>",
+  "productName": "Quasar para teste Italo",
+  "author": "Rafael Costa <rafaelcosta167@gmail.com>",
   "private": true,
   "scripts": {
     "lint": "eslint --ext .js,.vue ./",

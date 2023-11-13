@@ -1,20 +1,20 @@
 <template>
   <q-page padding>
     <q-form class="row justify-center" @submit.prevent="handleForgotPassowrd">
-      <p class="col-12 text-h5 text-center"> Reset Password </p>
+      <p class="col-12 text-h5 text-center"> Redefinir senha </p>
       <div class="col-md-4 col-sm-6 col-xs-10 q-gutter-y-md">
 
         <q-input
           label="Email"
           v-model="email"
           lazy-rules
-          :rules="[val => (val && val.length > 0) || 'Email is required']"
+          :rules="[val => (val && val.length > 0) || 'O e-mail é obrigatório']"
           type="email"
         />
 
         <div class="full-width q-pt-md q-gutter-y-sm">
           <q-btn
-            label="Send Reset Email"
+            label="Enviar e-mail de redefinição"
             color="primary"
             class="full-width"
             outline
@@ -23,7 +23,7 @@
           />
 
           <q-btn
-            label="Back"
+            label="Voltar"
             color="dark"
             class="full-width"
             rounded
@@ -51,7 +51,7 @@ export default defineComponent({
     const handleForgotPassowrd = async () => {
       try {
         await sendPasswordRestEmail(email.value)
-        notifySuccess(`Password reset email sent to: ${email.value}`)
+        notifySuccess(`E-mail de redefinição de senha enviado para: ${email.value}`)
       } catch (error) {
         notifyError(error.message)
       }

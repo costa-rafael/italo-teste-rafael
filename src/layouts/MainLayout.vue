@@ -11,8 +11,8 @@
           @click="toggleLeftDrawer"
         />
 
-        <q-toolbar-title>
-          Estoque
+        <q-toolbar-title class="r-p-fot-30">
+          Grupo
         </q-toolbar-title>
 
         <dark-mode-toogle />
@@ -21,7 +21,7 @@
           <q-list>
             <q-item clickable v-close-popup @click="handleLogout">
               <q-item-section>
-                <q-item-label>Logout</q-item-label>
+                <q-item-label>Sair</q-item-label>
               </q-item-section>
             </q-item>
           </q-list>
@@ -35,10 +35,12 @@
       bordered
     >
       <q-list>
-        <q-item-label
-          header
-        >
-          Menu
+        <q-item-label class="bg-primary r-p-dir-20">
+        <img
+          alt="Italo Logo"
+          src="~assets/logo-italo.svg"
+          style="width: 100%; height: auto"
+          >
         </q-item-label>
 
         <EssentialLink
@@ -75,13 +77,13 @@ const linksList = [
     routeName: 'me'
   },
   {
-    title: 'Category',
+    title: 'Turma',
     caption: '',
     icon: 'mdi-shape-outline',
     routeName: 'category'
   },
   {
-    title: 'Product',
+    title: 'Grupo',
     caption: '',
     icon: 'mdi-archive',
     routeName: 'product'

@@ -91,12 +91,12 @@ module.exports = configure(function (ctx) {
     framework: {
       config: {
         brand: {
-          primary: '#2c9c6a',
-          secondary: '#26A69A',
+          primary: '#1b7679',
+          secondary: '#62a29e',
           accent: '#9C27B0',
           dark: '#1d1d1d',
           positive: '#21BA45',
-          negative: '#C10015',
+          negative: '#bf1932',
           info: '#31CCEC',
           warning: '#F2C037'
         }
@@ -162,12 +162,12 @@ module.exports = configure(function (ctx) {
       },
 
       manifest: {
-        name: 'Quasar Estoque Supabase',
-        short_name: 'Quasar Estoque Supabase',
-        description: 'Estoque fácil na palma da sua mão',
+        name: 'Quasar para teste Italo',
+        short_name: 'Quasar com Supabase e VUE JS',
+        description: 'Tenha a Italo mais próximo de Você',
         display: 'standalone',
         orientation: 'portrait',
-        background_color: '#ffffff',
+        background_color: '#e8e8e8',
         theme_color: '#2c9c6a',
         categories: ['utilities', 'productivity', 'personalization'],
         icons: [

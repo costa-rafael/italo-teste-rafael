@@ -26,10 +26,10 @@
       </q-card-section>
 
       <q-card-actions align="right">
-        <q-btn label="Cancel" color="primary" outline v-close-popup />
+        <q-btn label="Cancelar" color="primary" outline v-close-popup />
         <q-btn
           v-if="brand.phone"
-          label="Buy on whatsapp"
+          label="Fale no Whatsapp"
           icon="mdi-whatsapp"
           color="green-7"
           @click="handleSendWpp"

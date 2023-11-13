@@ -8,13 +8,13 @@
       </div>
       <q-form class="col-md-7 col-xs-12 col-sm-12 q-gutter-y-md" @submit.prevent="handleSubmit">
         <q-input
-          label="Store Name"
+          label="Nome do Grupo"
           v-model="form.name"
-          :rules="[val => (val && val.length > 0) || 'Name is required']"
+          :rules="[val => (val && val.length > 0) || 'O nome é obrigatório']"
         />
 
         <q-input
-          label="Phone"
+          label="Telefone"
           v-model="form.phone"
           mask="(##) #####-####"
           unmasked-value
@@ -35,7 +35,7 @@
         </div>
 
         <q-btn
-          label="Save"
+          label="Salvar"
           color="primary"
           class="full-width"
           rounded
@@ -43,7 +43,7 @@
         />
 
         <q-btn
-          label="Cancel"
+          label="Cancelar"
           color="primary"
           class="full-width"
           rounded
